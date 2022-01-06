@@ -90,8 +90,6 @@ export default {
   }),
   methods: {
     signInWithEmailAndPassword() {
-      console.log("click on submit");
-      console.log(this.logInForm);
       this.$store.dispatch("userModule/logIn", this.logInForm).then(
         () => {
           this.$swal.fire({

@@ -73,7 +73,6 @@ export default {
   methods: {
     signOut() {
       this.$store.dispatch("userModule/signOut").then(() => {
-        console.log("Sign-out successful");
         this.$swal.fire({
           position: "top-end",
           title: "Haz cerrado sesión",

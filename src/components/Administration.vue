@@ -61,7 +61,6 @@ export default {
   }),
   methods: {
     async deleteCourse(item) {
-      console.log('click on delete course')
       this.$swal({
         title: '¿Seguro que deseas eliminar este curso?',
         icon: 'warning',

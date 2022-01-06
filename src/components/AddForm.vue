@@ -163,11 +163,9 @@ export default {
       this.$store.dispatch('coursesModule/getAllCourses')
     },
     addCourseButton() {
-      console.log('click on add course button')
+
     },
     async addCourse() {
-      console.log('click on add course')
-      console.log(this.formCourse)
       await this.$swal({
         title: '¿Seguro que deseas agregar este curso?',
         icon: 'info',

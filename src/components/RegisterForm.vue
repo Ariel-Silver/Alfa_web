@@ -69,8 +69,6 @@ export default {
   }),
   methods: {
     createUserWithEmailAndPassword() {
-      console.log("click on register");
-      console.log(this.register);
       this.$store.dispatch("userModule/signUp", this.register).then(
         () => {
           this.$swal.fire({
